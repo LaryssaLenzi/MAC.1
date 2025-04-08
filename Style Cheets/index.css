@@ -24,20 +24,20 @@ header {
 }
 
 
-.nav ul li {
-    display: inline-block;
-}
+    .nav-link{
+        font-size: 125%;
+        color: #000000;
+        margin: 0 5px;
+    }
 
-.nav ul li a {
-    display: block;
-    color: #FFFFFF;
-    padding: 30px 10px;
-}
+    .nav-link:hover{
+        color: #000000;
+        transform: scale(1.2);
+    }
 
-main {
-    margin-top: -7%;
-    padding: 50px 0;
-}
+    .nav-link:active{
+        transform: scale(0.95);
+    }
 
 /*HOME*/
 
@@ -46,28 +46,26 @@ main {
     margin-bottom: 15%;
 }
 
-.home img {
-    margin-left: 60%;
-    margin-top: -7%;
+    .home img {
+        margin-left: 60%;
+        margin-top: -7%;
 
-}
+    }
 
-.home_p {
-    margin-top: -35%;
-    text-align: center;
-    margin-left: -58%;
-    font-family: "arial";
-    font-size: 255%;
-}
+    .home_p {
+        margin-top: -35%;
+        text-align: center;
+        margin-left: -58%;
+        font-family: "arial";
+        font-size: 255%;
+    }
 
 /*LNHA QUE SEPARA OS TÓPICOS*/
 
 hr {
     display: block;
     margin-top: -2%;
-    margin-bottom: 0.5%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: -2% auto 0.5%;
     border-style: inset;
     border-width: 1px;
     border-color: black;
@@ -80,45 +78,51 @@ hr {
     margin-bottom: 8%;
 }
 
-.sobre_nos_topo {
-    justify-content: flex;
-    padding: 5%;
+    .sobre_nos_topo {
+        justify-content: flex;
+        padding: 5%;
 
-}
+    }
 
-.sobre_nos_topo p {
-    padding: 2%;
-    margin-top: -3.5%;
-    margin-left: 1%;
-}
+        .sobre_nos_topo p {
+            padding: 2%;
+            margin-top: -3.5%;
+            margin-left: 1%;
+        }
 
-.sobre_nos_titulo {
-    font-family: aria;
-    text-align: center;
-    font-size: 255%;
-    margin-left: -75%;
-}
+    .sobre_nos_titulo {
+        font-family: aria;
+        text-align: center;
+        font-size: 255%;
+        margin-left: -75%;
+    }
 
-.sobre_nos_conteudo {
-    display: flex;                 /* Define o layout em colunas */
-    align-items: center;           /* Alinha verticalmente ao centro */
-    justify-content: center;       /* Centraliza os itens horizontalmente */
-    gap: 20px;                     /* Espaço entre o texto e a imagem */
-    padding: 20px;                 /* Espaçamento interno */
+    .sobre_nos_conteudo {
+        display: flex;                 /* Define o layout em colunas */
+        align-items: center;           /* Alinha verticalmente ao centro */
+        justify-content: center;       /* Centraliza os itens horizontalmente */
+        gap: 20px;                     /* Espaço entre o texto e a imagem */
+        padding: 20px;                 /* Espaçamento interno */
 
-}
-.sobre_nos_conteudo_p {
-    flex: 1;                       /* O texto ocupa o espaço necessário */
-    text-align: justify;
-    width: 45%;
-}
+    }
 
-.sobre_nos_conteudo img {
-    max-width: 520px;              /* Define a largura máxima da imagem */
-    height: auto;                  /* Mantém a proporção da imagem */
-    object-fit: contain;           /* Ajusta a imagem para caber */
+        .sobre_nos_conteudo_p {
+        flex: 1;                       /* O texto ocupa o espaço necessário */
+        text-align: justify;
+        width: 45%;
 
-}
+        font-family: sans-serif;
+        font-size: 109%;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+        .sobre_nos_conteudo img {
+        max-width: 520px;              /* Define a largura máxima da imagem */
+        height: auto;                  /* Mantém a proporção da imagem */
+        object-fit: contain;           /* Ajusta a imagem para caber */
+
+    }
 
 /*ATLETAS*/
 
@@ -128,52 +132,52 @@ hr {
 
 }
 
-.atletas_topo p {
-    padding: 2%;
-    margin-top: -3.5%;
-    margin-left: 1%;
+    .atletas_topo p {
+        padding: 2%;
+        margin-top: -3.5%;
+        margin-left: 1%;
 
-}
+    }
 
-.atletas_titulo {
-    font-family: aria;
-    text-align: center;
-    font-size: 255%;
+    .atletas_titulo {
+        font-family: aria;
+        text-align: center;
+        font-size: 255%;
     
-}
+    }
 
 
-.atletas_conteudo {
-    flex: 1%;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-bottom: 15%;
-    margin-top: 5%;
-    padding: 1%;
+    .atletas_conteudo {
+        flex: 1%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 15%;
+        margin-top: 5%;
+        padding: 1%;
 
-}
+    }
 
-.atleta img {
-    border-radius: 50%;
-    margin-left: 10%;
-    max-width: 90%;
+        .atleta img {
+            border-radius: 50%;
+            margin-left: 10%;
+            max-width: 90%;
 
-}
+        }
 
-.ciculo {
-    background-color: rgb(0, 173, 173);
-    border-radius: 70%;
-    padding: 2%;
+            .ciculo {
+                background-color: rgb(0, 173, 173);
+                border-radius: 70%;
+                padding: 2%;
 
-}
+            }
 
-.atleta h5 {
-    margin-top: 5%;
-    text-align: center;
-    justify-content: space-between;
+        .atleta h5 {
+            margin-top: 5%;
+            text-align: center;
+            justify-content: space-between;
 
-}
+        }
 
 /*ATLETAS BOTÃO*/
 
@@ -188,22 +192,22 @@ hr {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.atleta_botao a {
-    color: white;               /* Cor do texto */
-    text-decoration: none;       /* Remove o sublinhado */
-    font-weight: bold;           /* Negrito para destaque */
-    display: inline-block;       /* Para centralizar o link no botão */
-}
+    .atleta_botao a {
+        color: white;               /* Cor do texto */
+        text-decoration: none;       /* Remove o sublinhado */
+        font-weight: bold;           /* Negrito para destaque */
+        display: inline-block;       /* Para centralizar o link no botão */
+    }
 
-.atleta_botao:hover {
-    transform: scale(1.05);               /* Aumenta o botão ao passar o mouse */
-    box-shadow: 0px 4px 15px rgba(0, 173, 173, 0.5);  /* Adiciona sombra */
-}
+    .atleta_botao:hover {
+        transform: scale(1.05);               /* Aumenta o botão ao passar o mouse */
+        box-shadow: 0px 4px 15px rgba(0, 173, 173, 0.5);  /* Adiciona sombra */
+    }
 
-.atleta_botao:active {
-    transform: scale(0.95);               /* Diminui o botão ao clicar */
-    box-shadow: 0px 3px 10px rgba(0, 173, 173, 0.7);  /* Sombra mais escura ao clicar */
-}
+    .atleta_botao:active {
+        transform: scale(0.95);               /* Diminui o botão ao clicar */
+        box-shadow: 0px 3px 10px rgba(0, 173, 173, 0.7);  /* Sombra mais escura ao clicar */
+    }
 
 
 
@@ -215,48 +219,48 @@ hr {
 
 }
 
-.instituicoes_topo p {
-    padding: 2%;
-    margin-top: -3.5%;
-    margin-left: 1%;
-}
+    .instituicoes_topo p {
+        padding: 2%;
+        margin-top: -3.5%;
+        margin-left: 1%;
+    }
 
-.instituicoes_titulo {
-    font-family: aria;
-    text-align: center;
-    font-size: 255%;
-}
+    .instituicoes_titulo {
+        font-family: aria;
+        text-align: center;
+        font-size: 255%;
+    }
 
-.instituicoes_conteudo {
-    flex: 1%;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    padding: 1%;
-    margin-bottom: 3%;
-    margin-top: 5%;
-}
+    .instituicoes_conteudo {
+        flex: 1%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 1%;
+        margin-bottom: 3%;
+        margin-top: 5%;
+    }
 
-.quadra {
-    background-color: rgb(0, 173, 173);
-    height: 105%;
-    width: 97%;
-    border-radius: 25%;
-}
+        .quadra {
+        background-color: rgb(0, 173, 173);
+        height: 105%;
+        width: 97%;
+        border-radius: 25%;
+    }
 
-.quadra img {
-    max-width: 67%; 
-    margin-bottom: -79%;
-    margin-left: 37%; 
-    border-radius: 50%;
-}
+        .quadra img {
+            max-width: 67%; 
+            margin-bottom: -79%;
+            margin-left: 37%; 
+            border-radius: 50%;
+        }
 
-.instituicao_maps img {
-    max-width: 20%;
-    border-radius: 50%; 
-    margin-top: -17%; 
-    margin-left: 79%;
-}
+    .instituicao_maps img {
+        max-width: 20%;
+        border-radius: 50%; 
+        margin-top: -17%; 
+        margin-left: 79%;
+    }
 
 .escrita {
     margin-top: 15px; 
